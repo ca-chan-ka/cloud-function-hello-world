@@ -7,6 +7,7 @@ fi
 
 gcloud functions deploy hello-world \
     --project $PROJECT \
+    --entry-point application.Main \
     --runtime java11 \
     --trigger-http \
     --region asia-northeast1 \
